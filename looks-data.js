@@ -1,4 +1,4 @@
-// Fuente compartida del inicio, la galería, los artículos y las páginas individuales.
+﻿// Fuente compartida del inicio, la galería, los artículos y las páginas individuales.
 window.archiveLooks = [
     {
       name: "Rihanna",
@@ -109,6 +109,7 @@ window.archiveGalleryLooks = [
       theme: "Charles James: Más allá de la moda",
       image: "images/horizontal/4.webp",
       position: "55% 36%",
+      coverPosition: "55% 60%",
       description: "Un conjunto blanco de top corto estructurado y falda larga con una silueta moderna."
     },
 	{
@@ -118,6 +119,7 @@ window.archiveGalleryLooks = [
       theme: "Charles James: Más allá de la moda",
       image: "images/horizontal/5.webp",
       position: "38% 10%",
+      coverPosition: "38% 35%",
       description: "Un vestido rosa pálido con bordados, una extensa cola y un gran lazo posterior."
     },
 	{
@@ -127,6 +129,7 @@ window.archiveGalleryLooks = [
       theme: "China: A través del espejo",
       image: "images/horizontal/6.webp",
       position: "55% 36%",
+      coverPosition: "55% 60%",
       description: "Un traje negro de inspiración oriental decorado con llamativos dragones dorados."
     },
 	{
@@ -145,6 +148,7 @@ window.archiveGalleryLooks = [
       theme: "Camp: Notas sobre la moda",
       image: "images/horizontal/9.webp",
       position: "55% 9%",
+      coverPosition: "55% 35%",
       description: "Una blusa transparente con pantalón de cintura alta y un delicado pendiente de perla."
     },
 	{
@@ -154,6 +158,7 @@ window.archiveGalleryLooks = [
       theme: "En América: Un léxico de la moda",
       image: "images/horizontal/8.webp",
       position: "55% 36%",
+      coverPosition: "55% 60%",
       description: "Un voluminoso vestido de tul inspirado en Marilyn Monroe y el glamour del Hollywood clásico."
     },
 	{

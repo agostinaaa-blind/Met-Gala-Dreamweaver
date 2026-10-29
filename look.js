@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   const content = document.getElementById("lookContent");
   const slug = new URLSearchParams(window.location.search).get("look");
   const look = window.allArchiveLooks.find((item) => window.lookSlug(item) === slug);
@@ -93,11 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <a class="look-video-link" href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener">Ver en YouTube <i class="ri-external-link-line" aria-hidden="true"></i><span class="sr-only"> (abre en otra pestaña)</span></a>
     </section>` : "";
+  // Devuelve la clase CSS de una foto según su orientación.
+  const photoClass = (photo) => photo.orientation === 'horizontal' ? 'look-photo look-photo--horizontal' : 'look-photo';
+
   const photoGallery = photos.length ? `
     <section class="look-photo-section" aria-labelledby="photoTitle">
       <div class="look-photo-heading"><p class="look-eyebrow">Archivo visual</p><h2 id="photoTitle">El look, de cerca</h2></div>
       <div class="look-photo-grid">${photos.map((photo, index) => `
-        <figure class="look-photo">
+        <figure class="${photoClass(photo)}">
           ${photo.src?.trim() ? `
             <div class="look-photo-frame"><img src="${escapeHtml(photo.src.trim())}" alt="${escapeHtml(photo.alt || `${look.name}: ${photo.caption || `foto ${index + 1}`}`)}" style="object-position:${escapeHtml(photo.position || "50% 50%")}" loading="lazy" decoding="async"></div>
           ` : `
@@ -123,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <a class="look-cover-scroll" href="#historia">Descubrí la historia <span aria-hidden="true"><i class="ri-arrow-down-line" aria-hidden="true"></i></span></a>
         </div>
         <figure class="look-cover-image">
-          <img src="${look.image}" alt="El look de ${look.name} en la Met Gala ${look.year}" style="object-position:${look.position}" fetchpriority="high">
+          <img src="${look.image}" alt="El look de ${look.name} en la Met Gala ${look.year}" style="object-position:${look.coverPosition || look.position}" fetchpriority="high">
           <figcaption>${look.name} <span>Met Gala / ${look.year}</span></figcaption>
         </figure>
       </header>

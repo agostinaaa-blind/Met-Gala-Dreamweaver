@@ -1,9 +1,10 @@
-// Lecturas editoriales originales de los looks del archivo.
+﻿// Lecturas editoriales originales de los looks del archivo.
 // Las claves incluyen el año para distinguir futuras apariciones de cada artista.
 // FOTOS DE CADA LOOK
 // En photos, completá src con la ruta de tu imagen (por ejemplo: "images/emma-detalle.webp").
 // alt describe la foto para accesibilidad; caption es el pie de foto visible.
 // position ajusta el encuadre (por ejemplo: "50% 25%").
+// orientation define si la foto es "vertical" (por defecto, ratio 3/4) u "horizontal" (ratio 4/3, ocupa todo el ancho).
 // Podés copiar un objeto para sumar fotos. Con src vacío se reserva el espacio.
 // Para quitar toda la galería de un look, usá photos: [].
 // VIDEO DE YOUTUBE
@@ -11,7 +12,7 @@
 // También se aceptan enlaces de Shorts y /embed/. Con "" la sección queda oculta.
 window.lookStories = {
   "rihanna-2015": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/HQK2R2yXSBk",
     photos: [
       { src: "images/articulos-fotos/rihanna1.webp", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/rihanna2.webp", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -27,7 +28,7 @@ window.lookStories = {
     detail: "El amarillo como protagonista, el bordado como textura y la capa como una prolongación de la silueta."
   },
   "zendaya-2018": {
-    youtubeUrl: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=x-ccfWcbht4",
     photos: [
       { src: "images/articulos-fotos/zendaya1.webp", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/zendaya2.webp", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -43,7 +44,7 @@ window.lookStories = {
     detail: "Las superficies metálicas y las líneas de armadura construyen una silueta de fuerza."
   },
   "blake-lively-2022": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/P6Ps7MYB2bI",
     photos: [
       { src: "images/articulos-fotos/blake1.webp", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/blake2.webp", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -59,7 +60,7 @@ window.lookStories = {
     detail: "El contraste entre cobre y turquesa remite a la pátina de la Estatua de la Libertad."
   },
   "nicole-kidman-2024": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/rfuzzLb1fys",
     photos: [
       { src: "images/articulos-fotos/nicole1.webp", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/nicole2.avif", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -75,7 +76,7 @@ window.lookStories = {
     detail: "El contraste del satén blanco con la organza negra organiza toda la composición."
   },
   "tyla-2024": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/-RC_TKi5ecc",
     photos: [
       { src: "images/articulos-fotos/tyla1.avif", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/tyla2.avif", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -91,7 +92,7 @@ window.lookStories = {
     detail: "La textura de arena y los reflejos de los microcristales acercan el vestido a una pieza escultórica."
   },
   "elle-fanning-2024": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/gw2Q-5125XM",
     photos: [
       { src: "images/articulos-fotos/elle1.avif", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/elle2.webp", alt: "", caption: "Los detalles de la pieza", position: "80% 50%" }
@@ -107,7 +108,7 @@ window.lookStories = {
     detail: "Las transparencias y los reflejos construyen la ilusión de una pieza hecha de cristal."
   },
   "bad-bunny-2025": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/hS02V3TkoE8",
     photos: [
       { src: "images/articulos-fotos/badb1.webp", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/badb2.webp", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -123,7 +124,7 @@ window.lookStories = {
     detail: "El sombrero inspirado en la pava jíbara concentra el sentido cultural del conjunto."
   },
   "anok-yai-2026": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/b6IRRP-WxNM",
     photos: [
       { src: "images/articulos-fotos/anok1.webp", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/anok2.webp", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -139,7 +140,7 @@ window.lookStories = {
     detail: "Los volúmenes y los reflejos articulan una presencia de carácter escultórico."
   },
   "emma-chamberlain-2026": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/ZLN-JythCFk",
     photos: [
       { src: "images/articulos-fotos/emma2.avif", alt: "", caption: "Otra mirada del look", position: "50% 50%" },
       { src: "images/articulos-fotos/emma1.webp", alt: "", caption: "Los detalles de la pieza", position: "50% 50%" }
@@ -178,7 +179,7 @@ window.lookStories = {
     ]
   },
   "princesa-diana-1996": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/UPntAJHaNE0",
     "photos": [
       {
         "src": "images/articulos-fotos/diana1.webp",
@@ -201,7 +202,7 @@ window.lookStories = {
     ]
   },
   "rihanna-2014": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/rLZAAexFOPk",
     "photos": [
       {
         "src": "images/articulos-fotos/rihannam1.webp",
@@ -213,7 +214,7 @@ window.lookStories = {
         "src": "images/articulos-fotos/rihannam2.webp",
         "alt": "",
         "caption": "Los detalles de la pieza",
-        "position": "50% 50%"
+        "position": "50% 30%"
       }
     ],
     "title": "Rihanna: dos piezas, una misma silueta",
@@ -230,13 +231,13 @@ window.lookStories = {
         "src": "images/articulos-fotos/taylor2.webp",
         "alt": "",
         "caption": "Otra mirada del look",
-        "position": "50% 50%"
+        "position": "50% 35%"
       },
       {
         "src": "images/articulos-fotos/taylor1.webp",
         "alt": "",
         "caption": "Los detalles de la pieza",
-        "position": "50% 50%"
+        "position": "50% 35%"
       }
     ],
     "title": "Taylor Swift: el vestido que se descubre al girar",
@@ -247,13 +248,13 @@ window.lookStories = {
     ]
   },
   "olivier-rousteing-y-justin-bieber-2015": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/UT3I5REIrso",
     "photos": [
       {
         "src": "images/articulos-fotos/justin2.webp",
         "alt": "",
         "caption": "Otra mirada del look",
-        "position": "50% 50%"
+        "position": "50% 40%"
       },
       {
         "src": "images/articulos-fotos/justin1.webp",
@@ -270,7 +271,7 @@ window.lookStories = {
     ]
   },
   "katy-perry-2018": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/aeLselsHtiA",
     "photos": [
       {
         "src": "images/articulos-fotos/katy1.webp",
@@ -293,13 +294,13 @@ window.lookStories = {
     ]
   },
   "harry-styles-2019": {
-    youtubeUrl: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=wUfElcG0LNs",
     "photos": [
       {
         "src": "images/articulos-fotos/harry1.webp",
         "alt": "",
         "caption": "Otra mirada del look",
-        "position": "50% 50%"
+        "position": "50% 25%"
       },
       {
         "src": "images/articulos-fotos/harry2.webp",
@@ -316,7 +317,7 @@ window.lookStories = {
     ]
   },
   "billie-eilish-2021": {
-    youtubeUrl: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=C-QFO6W9Lmc",
     "photos": [
       {
         "src": "images/articulos-fotos/billie1.webp",
@@ -328,7 +329,7 @@ window.lookStories = {
         "src": "images/articulos-fotos/billie2.webp",
         "alt": "",
         "caption": "Los detalles de la pieza",
-        "position": "50% 50%"
+        "position": "50% 35%"
       }
     ],
     "title": "Billie Eilish: el volumen del glamour clásico",
@@ -339,19 +340,21 @@ window.lookStories = {
     ]
   },
   "stray-kids-2024": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/zSAVfK49qDE",
     "photos": [
       {
-        "src": "",
+        "src": "images/articulos-fotos/skz1.webp",
         "alt": "",
         "caption": "Otra mirada del look",
-        "position": "50% 50%"
+        "position": "50% 50%",
+        "orientation": "horizontal"
       },
       {
-        "src": "",
+        "src": "images/articulos-fotos/skz2.webp",
         "alt": "",
         "caption": "Los detalles de la pieza",
-        "position": "50% 50%"
+        "position": "50% 50%",
+        "orientation": "horizontal"
       }
     ],
     "title": "Stray Kids: una imagen coral de sastrería y color",
@@ -362,7 +365,7 @@ window.lookStories = {
     ]
   },
   "hudson-williams-2026": {
-    youtubeUrl: "",
+    youtubeUrl: "https://youtu.be/FQnETkP9sE8",
     "photos": [
       {
         "src": "images/articulos-fotos/hudson1.webp",

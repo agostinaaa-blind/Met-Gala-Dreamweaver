@@ -41,6 +41,11 @@
 .look-photo { margin: 0; min-width: 0; }
 .look-photo-frame, .look-photo-placeholder { aspect-ratio: 3 / 4; background: var(--paper-deep); overflow: hidden; }
 .look-photo-frame img { height: 100%; object-fit: cover; }
+/* Imagen horizontal: ocupa el ancho completo con ratio 4/3 */
+.look-photo--horizontal { grid-column: 1 / -1; }
+.look-photo--horizontal .look-photo-frame,
+.look-photo--horizontal .look-photo-placeholder { aspect-ratio: 4 / 3; }
+.look-photo--horizontal .look-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
 .look-photo-placeholder { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.25rem; border: 1px solid var(--line); background: linear-gradient(145deg, #eae5db, #e0d8ca); text-align: center; }
 .look-photo-number { position: absolute; left: 1rem; top: 1rem; font-size: .6rem; letter-spacing: .12em; color: #6b665f; }
 .look-photo-placeholder > i { display: grid; place-items: center; width: 3.5rem; height: 3.5rem; border: 1px solid #bcb3a4; border-radius: 50%; color: #706658; font-size: 1.5rem; margin-bottom: 1rem; }
